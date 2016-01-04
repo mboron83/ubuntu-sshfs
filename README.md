@@ -16,6 +16,7 @@ Automatic share mounting
 ```
 sshfs#username@hostname:/home/username/    /home/username/remote/    fuse    delay_connect,comment=sshfs,users,exec,uid=1000,gid=1000,allow_other,reconnect,transform_symlinks,BatchMode=yes 0 0
 ```
+
 7. copy mountsshfs to /etc/networking/if-up.d/mountsshfs and change permissions to 755
 8. copy umountsshfs /etc/networking/if-down.d/umountsshfs and change permissions to 755
 9. restart system, enjoy :-)
