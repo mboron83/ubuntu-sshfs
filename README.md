@@ -1,3 +1,12 @@
+Manual share mounting
+---------------
+```
+sshfs username@hostname:/home/username /home/username/remote/
+```
+
+Automatic share mounting
+---------------
+
 1. sudo apt-get install sshfs
 2. check permissions of ~/ssh/id_rsa. Be sure that they are set to 600 !!!!!!!
 3. sudo usermod -a -G fuse USERNAME
